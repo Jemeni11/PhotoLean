@@ -1,0 +1,41 @@
+[project]
+name = "PhotoLean"
+version = "1.2.1"
+authors = [
+    { name = "Emmanuel C. Jemeni", email = "jemenichinonso11@gmail.com" }
+]
+description = "Optimize your images and save disk space with ease!"
+readme = "PYPI_README.rst"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+keywords = [
+  "Command",
+  "Terminal",
+  "Productivity",
+  "Automation",
+  "CLI",
+  "Multitasking"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "packaging>=24.2"
+]
+
+[project.scripts]
+PhotoLean = "PhotoLean.main:main"
+
+[project.urls]
+"Homepage" = "https://github.com/Jemeni11/PhotoLean"
+"Bug Tracker" = "https://github.com/Jemeni11/PhotoLean/issues"
+"Changelog" = "https://github.com/Jemeni11/PhotoLean/blob/main/CHANGELOG.md"
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
